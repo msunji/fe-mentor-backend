@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+
+# env vars
+.env
+.env.test
+.env.production
+
+# yarn 
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# OS generated files
+.DS_Store
