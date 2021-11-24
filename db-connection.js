@@ -20,7 +20,6 @@ const getSolutions = async () => {
     return solutions;
 
   } catch (err) {
-    console.error(err.message);
     return {
       statusCode: 500,
       msg: 'Something went wrong'
