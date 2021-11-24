@@ -16,12 +16,16 @@ const getSolutions = async () => {
       id: solution.id,
       ...solution.fields
     }));
-    console.log(JSON.stringify(solutions));
-    return JSON.stringify(solutions);
+
+    return solutions;
 
   } catch (err) {
     console.error(err.message);
+    return {
+      statusCode: 500,
+      msg: 'Something went wrong'
+    }
   }
 }
 
-exports.getSolutions = getSolutions;
+module.exports.getSolutions = getSolutions;
